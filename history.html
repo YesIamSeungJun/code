@@ -1,0 +1,361 @@
+~#2.7
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <link 
+            rel = "shortcut icon"
+            sizes = "16x16 32x32 64x64"
+            href = "https://nomadcoders.co/m.svg"
+        />
+        <title>Home - My first website.</title>
+        <meta charset="utf=8">
+        <meta name = "description" content = "this is my website">
+    </head>
+    <body>
+        <h1>hello</h1>
+        <a href="http://google.com" target="_blank">go to google.com</a>
+        <img src="img/sul 너무크기 뺴기.jpg" />
+
+
+        <p>my name is <abbr title="lee seungjun">LSJ</abbr></p>
+        <p>Here is <strong> south korea</strong></p>
+        <p>2<sup>5</sup></p>
+
+        <audio
+        controls="enables"
+        src = "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"> 
+        </audio>
+
+    </body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+    </head>
+    <body>
+        <form>
+            <label for="profile">profile photo</label> 
+            <input id="profile"type="file" accept=".pf" />
+
+            <label for="first-name" >first name</label>
+            <input id="first-name" required placeholder="Name" type="text" />
+            <input required placeholder="Last Name" type="text" />
+            <input required placeholder="User Name" type="text" />
+            <input required placeholder="Password"  type="password" />
+            <input type="Submit" value="Create Account"/>
+            
+        </form>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+    </head>
+    <body>
+        <form>
+            <label for="profile">profile photo</label> 
+            <input id="profile" type="file" accept=".pf" />
+
+            <label for="website" >website</label>
+            <input id="website" required placeholder="Name" type="url" />
+            
+        </form>
+    </body>
+</html>
+
+# label input은 for id 어트리로 이어짐 
+# id는 유일해야함 태그 다르면 id 다름 
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+    </head>
+    <body>
+        <form>
+        <div>
+            <label for="website" >website</label>
+            <input id="website" required placeholder="Name" type="url" />
+        </div>
+            <label for="website" >website</label>
+            <input id="website" required placeholder="Name" type="url" />   
+        </form>
+
+
+        <header>
+            <h1>THE NICO TIMES</h1>
+        </header>
+
+
+    </body>
+</html>
+
+# label input은 for id 어트리로 이어짐 
+# id는 유일해야함 태그 다르면 id 다름 
+
+# 문서를 보기만 해도 의미를 알 수 있는 걸 sementic 이라고 함 
+# div, span는 non - sementic 
+# header 제목, main 내용, footer 꼬릿말 - 코드를 보고 이해하기 쉽게! 
+# sementic은 좋음 document와 content 구분되게끔 
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+        <link href="styles.css" rel="stylesheet" />
+        <style>
+            h1{
+                color: yellowgreen;
+                font-weight:700;
+                font-size:50px;
+
+            }
+
+
+
+
+
+            <!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+        <link href="styles.css" rel="stylesheet" />
+        <style>
+            *{
+                border: 1px dashed black;
+            }
+            html{
+            
+                background-color: tomato;
+            }
+
+            body{
+                margin:20px;
+                padding: 20px;
+                background-color: thistle;
+                
+                
+            }
+            div {
+            
+                padding:20px;
+                border:2px solid black;
+
+            }
+            
+            #first {
+                height:150px;
+                width: 150px;
+                background-color: whitesmoke;
+            }
+            
+            #second {
+                height:100px;
+                width: 100px;
+                background-color: red;
+            }
+            
+            #third {
+                height:50px;
+                width: 50px;
+                background-color: blue;
+            }
+            
+            #fourth {
+                height:25px;
+                width: 25px;
+                background-color: yellow;
+            }
+        
+            span{
+                border-style: groove;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="first">
+            <div id="second">
+                <div id="third">
+                    <div id="fourth">
+
+                       <span>22</span> 
+                    </div>
+                </div>
+            </div>
+        </div>
+              
+    </body>
+</html>
+
+
+
+--------------------------------------------------
+인라인  span link image 등
+블락 : div address 이외 다수 
+
+대부분 블락임 
+
+
+****box의 3가지 성질!**** 
+
+margin border padding, ? 
+
+margin은 box의 border(경계)의 바깥에 있는 공간이다
+
+collapsing margin : 경계가 같은 두 박스는 하나의 margin을 공유한다. 위아래만 적용됨
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+        <style>
+            body{
+                margin:20px
+            }
+            span{
+                background-color: teal;
+            }
+
+            .btn{
+                padding : 2px;
+            }
+
+            .teal{
+                background-color: teal;
+            
+                
+            }
+
+            .tomato {
+                background-color: tomato;
+                color: white;
+                
+                border-radius: 5px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <span class="btn teal">hello</span>
+        <span class="btn tomato">hello</span>
+        <span class="btn teal">hello</span>
+        <span class="btn tomato">hello</span>
+        <span class="btn teal">hello</span>
+        <span class="btn tomato">hello</span>
+    </body>
+</html>
+
+
+
+--------------------------------------------------
+#tomato : id tomato
+.tomato : class tomato 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>Home - My first website.</title>
+        <style>
+
+          body{
+            height: 100vh;
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column; 
+            align-items: flex-end;
+          }
+          div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            width: 300px;
+            height: 300px; 
+            background-color :teal;
+          }
+
+          #second{
+            background-color: wheat;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div>1</div>
+        <div id="second">2</div>
+        <div>3</div>    
+    </body>
+</html>
+
+
+ 
+
+
+
+--------------------------------------------------
+
+flex 는 박스 두기에 유용 
+
+부모 엘리먼트에만 적을 것! 자식은 안됨
+
+여기서는 div 말고  body 에만 ! 
+
+
+justify-content 주축이고
+align-items 교차축이 디포ㄹ트 
+
+but flex-direction 적용하면 qkRNla 
+
+
+123 의 부모는 div
